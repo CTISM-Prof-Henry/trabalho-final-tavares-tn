@@ -1,0 +1,101 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+header {
+    background: #D9D9D9;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 15px 40px;
+}
+
+
+/* LOGO */
+.logo {
+    font-size: 24px;
+}
+
+/* MENU */
+nav {
+    display: flex;
+    gap: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+
+/* LOGIN (ícone em cima e texto embaixo) */
+.login {
+    display: flex;
+    flex-direction: column; /* ESSA LINHA faz o texto ir pra baixo */
+    align-items: center;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.login .icon {
+    font-size: 24px;
+}
+
+/* ÁREA PRINCIPAL */
+main {
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTAINER DOS CARDS */
+.container {
+    display: flex;
+    gap: 40px;
+}
+
+/* CARD */
+.card {
+    background: #eaeaea;
+    padding: 25px;
+    width: 260px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+/* TÍTULO DO CARD */
+.card h2 {
+    margin-bottom: 15px;
+}
+
+/* LISTA */
+.card ul {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.card li {
+    margin: 5px 0;
+}
+
+/* BOTÃO */
+.card button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+.card button:hover {
+    background: #555;
+}
