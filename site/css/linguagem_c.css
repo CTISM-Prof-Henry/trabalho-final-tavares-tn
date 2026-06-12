@@ -39,6 +39,8 @@ nav a {
     align-items: center;
     font-size: 22px;
     cursor: pointer;
+    text-decoration: none;
+    color: black;
 }
 
 .login .icon {

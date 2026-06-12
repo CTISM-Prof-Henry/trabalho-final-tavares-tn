@@ -33,7 +33,7 @@ nav a {
     font-size: 24px;
 }
 
-/* LOGIN  */
+/* LOGIN (ícone em cima e texto embaixo) */
 .login {
     display: flex;
     flex-direction: column; /* ESSA LINHA faz o texto ir pra baixo */
@@ -50,15 +50,18 @@ nav a {
 
 /* ÁREA PRINCIPAL */
 main {
-    height: calc(100vh - 80px);
+    min-height: calc(100vh - 80px);
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px 0;
 }
 
 /* CONTAINER DOS CARDS */
 .container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 40px;
 }
 

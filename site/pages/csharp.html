@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Ligação com o CSS -->
+    <link rel="stylesheet" href="../css/linguagem_c.css">
+
+    <title>C#</title>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <!-- Logo -->
+        <div class="logo">
+            <img src="../images/logo.png">
+        </div>
+
+        <!-- Menu -->
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="#">Cursos</a>
+        </nav>
+
+        <!-- Login -->
+        <a href="login.html" class="login">
+            <img src="../images/login.png">
+            <span>Acessar</span>
+        </a>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <section class="container">
+
+        <h1>C#</h1>
+
+        <details class="item">
+            <summary>
+                <img src="../images/seta-direita.png" class="arrow">
+                Estrutura básica
+            </summary>
+            <div class="content">
+                <p>Programa simples em C# com o método principal.</p>
+                <pre>
+using System;
+
+class Program {
+    static void Main() {
+        Console.WriteLine("Olá, mundo!");
+    }
+}
+                </pre>
+            </div>
+        </details>
+
+        <details class="item">
+            <summary>
+                <img src="../images/seta-direita.png" class="arrow">
+                Variáveis e tipos
+            </summary>
+            <div class="content">
+                <p>Declaração de variáveis com tipos primitivos.</p>
+                <pre>
+int idade = 25;
+double altura = 1.75;
+string nome = "Maria";
+bool ativo = true;
+                </pre>
+            </div>
+        </details>
+
+        <details class="item">
+            <summary>
+                <img src="../images/seta-direita.png" class="arrow">
+                Condicionais
+            </summary>
+            <div class="content">
+                <p>Estruturas de decisão com if e else.</p>
+                <pre>
+if (idade >= 18) {
+    Console.WriteLine("Maior de idade");
+} else {
+    Console.WriteLine("Menor de idade");
+}
+                </pre>
+            </div>
+        </details>
+
+        <details class="item">
+            <summary>
+                <img src="../images/seta-direita.png" class="arrow">
+                Laços de Repetição
+            </summary>
+            <div class="content">
+                <p>Repetição de blocos de código com for.</p>
+                <pre>
+for (int i = 0; i &lt; 5; i++) {
+    Console.WriteLine(i);
+}
+                </pre>
+            </div>
+        </details>
+
+    </section>
+
+</body>
+</html>

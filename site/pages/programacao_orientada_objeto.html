@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Ligação com o CSS -->
+    <link rel="stylesheet" href="../css/linguagem_c.css">
+
+    <title>Programação Orientada a Objetos</title>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <!-- Logo -->
+        <div class="logo">
+            <img src="../images/logo.png">
+        </div>
+
+        <!-- Menu -->
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="#">Cursos</a>
+        </nav>
+
+        <!-- Login -->
+        <a href="login.html" class="login">
+            <img src="../images/login.png">
+            <span>Acessar</span>
+        </a>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <section class="container">
+
+        <h1>Programação Orientada a Objetos</h1>
+
+        <details class="item">
+            <summary>
+                <img src="../images/seta-direita.png" class="arrow">
+                Classes e Objetos
+            </summary>
+            <div class="content">
+                <p>Classes definem modelos; objetos são instâncias dessas classes.</p>
+                <pre>
+class Carro {
+    string modelo = "Sedan";
+}
+
+Carro meuCarro = new Carro();
+                </pre>
+            </div>
+        </details>
+
+        <details class="item">
+            <summary>
+                <img src="../images/seta-direita.png" class="arrow">
+                Encapsulamento
+            </summary>
+            <div class="content">
+                <p>Protege os dados, permitindo acesso controlado por métodos.</p>
+                <pre>
+class Conta {
+    private double saldo;
+
+    public void depositar(double valor) {
+        saldo += valor;
+    }
+}
+                </pre>
+            </div>
+        </details>
+
+        <details class="item">
+            <summary>
+                <img src="../images/seta-direita.png" class="arrow">
+                Herança
+            </summary>
+            <div class="content">
+                <p>Uma classe pode herdar atributos e métodos de outra.</p>
+                <pre>
+class Animal {
+    public void comer() { }
+}
+
+class Cachorro : Animal {
+    public void latir() { }
+}
+                </pre>
+            </div>
+        </details>
+
+        <details class="item">
+            <summary>
+                <img src="../images/seta-direita.png" class="arrow">
+                Polimorfismo
+            </summary>
+            <div class="content">
+                <p>Objetos de classes diferentes podem responder ao mesmo método de formas distintas.</p>
+                <pre>
+Animal animal1 = new Cachorro();
+Animal animal2 = new Gato();
+
+animal1.emitirSom(); // "Au au!"
+animal2.emitirSom(); // "Miau!"
+                </pre>
+            </div>
+        </details>
+
+    </section>
+
+</body>
+</html>
