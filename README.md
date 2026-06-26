@@ -12,16 +12,16 @@ O projeto deve ser publicado no **GitHub Pages** e apresentado em aula para o pr
 
 ## 📌 Checklist
 
-* [ ] meu site tem pelo menos um arquivo do tipo `.html` 
-* [ ] estou usando CSS externo, em um arquivo separado `.css`
-* [ ] estou usando Javascript externo, em um arquivo separado `.js`
-* [ ] os arquivos do meu site estão na pasta `site`
-* [ ] a pasta `site` tem um arquivo `index.html`, que é a página inicial do meu site; sem esse arquivo, o GitHub Pages 
+* [X] meu site tem pelo menos um arquivo do tipo `.html` 
+* [X] estou usando CSS externo, em um arquivo separado `.css`
+* [X] estou usando Javascript externo, em um arquivo separado `.js`
+* [X] os arquivos do meu site estão na pasta `site`
+* [X] a pasta `site` tem um arquivo `index.html`, que é a página inicial do meu site; sem esse arquivo, o GitHub Pages 
       não vai funcionar
-* [ ] estou ciente que, se eu modificar ou excluir arquivos que não estejam na pasta `site` 
+* [X] estou ciente que, se eu modificar ou excluir arquivos que não estejam na pasta `site` 
       (por exemplo, `.github` ou `README.md`), isso pode afetar o funcionamento do meu site
 * [ ] respondi todas as perguntas e preenchi todos os checkboxes abaixo
-* [ ] meu site está hospedado no GitHub Pages, no link `<escreva aqui o link do seu site>`
+* [X] meu site está hospedado no GitHub Pages, no link `<escreva aqui o link do seu site>`
 
 ## 📖 Descrição do projeto
 
@@ -35,12 +35,12 @@ Descreva abaixo **sobre o que se trata seu site:**
 
 Se você utilizou uma IA, marque a caixa abaixo e preencha os campos:
 
-* [ ] declaro que utilizei uma IA para me auxiliar na elaboração do trabalho, mas que domino os conceitos vistos em aula
+* [X] declaro que utilizei uma IA para me auxiliar na elaboração do trabalho, mas que domino os conceitos vistos em aula
   e saberei explicá-los quando indagado pelo professor.
 
 * **IA utilizada:**
 * **Forma de utilização da IA:**
-  * [ ] fiz perguntas pontuais à IA, mas eu programei o código do meu site
+  * [X] fiz perguntas pontuais à IA, mas eu programei o código do meu site
   * [ ] dei um prompt para a IA, ela me deu um código e eu colei o código nos arquivos do meu site
 
 ## 🧩 Componentes HTML utilizados
@@ -51,11 +51,11 @@ Marque com `[x]` os elementos que **foram implementados no seu site**. Você nã
 
 #### Estrutura básica
 
-- [ ] `<!DOCTYPE html>`
-- [ ] `<html>`
-- [ ] `<head>`
-- [ ] `<title>`
-- [ ] `<body>`
+- [X] `<!DOCTYPE html>`
+- [X] `<html>`
+- [X] `<head>`
+- [X] `<title>`
+- [X] `<body>`
 
 #### Estrutura semântica
 
@@ -90,23 +90,23 @@ Marque com `[x]` os elementos que **foram implementados no seu site**. Você nã
 - Seletor de...
   - [ ] Classes (`.classe`)
   - [ ] IDs (`#id`)
-  - [ ] pseudoclasse (`#a::hover`)
+  - [X] pseudoclasse (`#a::hover`)
 - [ ] Cores
-- [ ] Tipografia (e.g. `font-family`)
+- [X] Tipografia (e.g. `font-family`)
 - [ ] Margem e padding
 - [ ] Layout com `flexbox`
 - [ ] Layout com `grid`
-- [ ] Responsividade (`media queries`)
-- [ ] Animações ou transições
+- [X] Responsividade (`media queries`)
+- [X] Animações ou transições
 
 ## ⚙️ JavaScript
 
 - [ ] Manipulação do DOM
-- [ ] Eventos (`click`, `submit`, etc.)
+- [X] Eventos (`click`, `submit`, etc.)
 - [ ] Validação de formulário
 - [ ] Alteração dinâmica de conteúdo
-- [ ] Uso de funções
-- [ ] Uso de arrays ou objetos
+- [X] Uso de funções
+- [X] Uso de arrays ou objetos
 - [ ] Uso de `fetch` ou API externa
 - [ ] local Storage
 
