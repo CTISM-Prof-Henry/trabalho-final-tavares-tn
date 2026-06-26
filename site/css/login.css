@@ -104,6 +104,43 @@ main {
     background: #555;
 }
 
+/* ÁREA DE LOGOUT */
+.logout-area {
+    display: none;
+    background: #eaeaea;
+    padding: 35px 40px;
+    width: 100%;
+    max-width: 380px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.logout-area h1 {
+    margin-bottom: 15px;
+    font-size: 26px;
+}
+
+.logout-area p {
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.logout-area button {
+    width: 100%;
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.logout-area button:hover {
+    background: #555;
+}
+
 /* MEDIA QUERY */
 @media (max-width: 700px) {
     header {
@@ -123,6 +160,10 @@ main {
     }
 
     .login-form {
+        margin: 0 20px;
+    }
+
+    .logout-area {
         margin: 0 20px;
     }
 }

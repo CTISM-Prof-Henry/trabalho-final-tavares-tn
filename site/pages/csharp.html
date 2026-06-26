@@ -6,10 +6,11 @@
 
     <!-- Ligação com o CSS -->
     <link rel="stylesheet" href="../css/linguagem_c.css">
+    <link rel="stylesheet" href="../css/progresso-curso.css">
 
     <title>C#</title>
 </head>
-<body>
+<body data-curso="csharp">
 
     <!-- HEADER -->
     <header>
@@ -22,6 +23,7 @@
         <nav>
             <a href="index.html">Início</a>
             <a href="cursos.html">Cursos</a>
+            <a href="progresso.html">Progresso</a>
         </nav>
 
         <!-- Login -->
@@ -35,6 +37,14 @@
     <section class="container">
 
         <h1>C#</h1>
+
+        <div class="progresso-curso">
+            <p class="progresso-texto">Progresso: <span id="porcentagem">0</span>%</p>
+            <div class="barra-fundo">
+                <div class="barra-preenchida" id="barra-progresso"></div>
+            </div>
+            <button id="btn-finalizar" disabled>Curso finalizado</button>
+        </div>
 
         <details class="item">
             <summary>
@@ -104,6 +114,10 @@ for (int i = 0; i &lt; 5; i++) {
         </details>
 
     </section>
+
+    <script src="../js/variaveis.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/progresso.js"></script>
 
 </body>
 </html>

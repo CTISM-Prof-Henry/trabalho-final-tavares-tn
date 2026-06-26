@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Ligação com o CSS -->
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/progresso.css">
 
-    <title>Login</title>
+    <title>Progresso dos Cursos</title>
 </head>
 <body>
 
@@ -34,28 +34,32 @@
 
     <!-- CONTEÚDO PRINCIPAL -->
     <main>
-        <form class="login-form" id="area-login">
-            <h1>Acessar</h1>
+        <h1 class="titulo-pagina">Progresso dos Cursos</h1>
 
-            <label for="usuario">Usuário</label>
-            <input type="text" id="usuario" name="usuario" placeholder="Digite seu usuário" required>
+        <p id="aviso-login" class="aviso-login">
+            Faça login para acompanhar seu progresso.
+            <a href="login.html">Acessar</a>
+        </p>
 
-            <label for="senha">Senha</label>
-            <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
-
-            <button type="button" id="btn-entrar" onclick="fazerLogin()">Entrar</button>
-        </form>
-
-        <div class="logout-area" id="area-logout">
-            <h1>Olá, <span id="nome-usuario"></span>!</h1>
-            <p>Você já está logado.</p>
-            <button type="button" id="btn-sair" onclick="fazerLogout()">Sair</button>
+        <div class="tabela-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Curso</th>
+                        <th>Progresso</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="corpo-tabela">
+                    <!-- Linhas preenchidas pelo JavaScript -->
+                </tbody>
+            </table>
         </div>
     </main>
 
     <script src="../js/variaveis.js"></script>
     <script src="../js/auth.js"></script>
-    <script src="../js/login.js"></script>
+    <script src="../js/progresso-pagina.js"></script>
 
 </body>
 </html>
