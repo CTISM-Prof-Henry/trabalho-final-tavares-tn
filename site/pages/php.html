@@ -7,7 +7,7 @@
     <!-- Ligação com o CSS -->
     <link rel="stylesheet" href="../css/linguagem_c.css">
 
-    <title>HTML</title>
+    <title>PHP</title>
 </head>
 <body>
 
@@ -34,7 +34,7 @@
     <!-- CONTEÚDO PRINCIPAL -->
     <section class="container">
 
-        <h1>HTML</h1>
+        <h1>PHP</h1>
 
         <details class="item">
             <summary>
@@ -42,18 +42,11 @@
                 Estrutura básica
             </summary>
             <div class="content">
-                <p>Toda página HTML possui uma estrutura padrão com tags essenciais.</p>
+                <p>Código PHP fica dentro de tags especiais.</p>
                 <pre>
-&lt;!DOCTYPE html&gt;
-&lt;html lang="pt-br"&gt;
-    &lt;head&gt;
-        &lt;meta charset="UTF-8"&gt;
-        &lt;title&gt;Minha Página&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;h1&gt;Olá, mundo!&lt;/h1&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
+&lt;?php
+    echo "Olá, mundo!";
+?&gt;
                 </pre>
             </div>
         </details>
@@ -61,15 +54,14 @@
         <details class="item">
             <summary>
                 <img src="../images/seta-direita.png" class="arrow">
-                Tags principais
+                Variáveis
             </summary>
             <div class="content">
-                <p>Tags mais utilizadas para organizar o conteúdo.</p>
+                <p>Variáveis em PHP começam com o símbolo $.</p>
                 <pre>
-&lt;h1&gt;Título principal&lt;/h1&gt;
-&lt;p&gt;Parágrafo de texto.&lt;/p&gt;
-&lt;div&gt;Bloco de conteúdo&lt;/div&gt;
-&lt;span&gt;Texto inline&lt;/span&gt;
+$idade = 25;
+$nome = "Carlos";
+$ativo = true;
                 </pre>
             </div>
         </details>
@@ -77,14 +69,16 @@
         <details class="item">
             <summary>
                 <img src="../images/seta-direita.png" class="arrow">
-                Links e imagens
+                Condicionais
             </summary>
             <div class="content">
-                <p>Como criar links e inserir imagens na página.</p>
+                <p>Estruturas de decisão com if e else.</p>
                 <pre>
-&lt;a href="https://exemplo.com"&gt;Visitar site&lt;/a&gt;
-
-&lt;img src="imagem.png" alt="Descrição da imagem"&gt;
+if ($idade >= 18) {
+    echo "Maior de idade";
+} else {
+    echo "Menor de idade";
+}
                 </pre>
             </div>
         </details>
@@ -92,20 +86,18 @@
         <details class="item">
             <summary>
                 <img src="../images/seta-direita.png" class="arrow">
-                Listas
+                Conexão com banco de dados
             </summary>
             <div class="content">
-                <p>Listas ordenadas e não ordenadas.</p>
+                <p>PHP pode se conectar a bancos de dados usando MySQLi ou PDO.</p>
                 <pre>
-&lt;ul&gt;
-    &lt;li&gt;Item 1&lt;/li&gt;
-    &lt;li&gt;Item 2&lt;/li&gt;
-&lt;/ul&gt;
+$conexao = mysqli_connect("localhost", "usuario", "senha", "banco");
 
-&lt;ol&gt;
-    &lt;li&gt;Primeiro&lt;/li&gt;
-    &lt;li&gt;Segundo&lt;/li&gt;
-&lt;/ol&gt;
+if (!$conexao) {
+    die("Falha na conexão");
+}
+
+echo "Conectado com sucesso!";
                 </pre>
             </div>
         </details>

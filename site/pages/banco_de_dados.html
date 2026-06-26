@@ -7,7 +7,7 @@
     <!-- Ligação com o CSS -->
     <link rel="stylesheet" href="../css/linguagem_c.css">
 
-    <title>HTML</title>
+    <title>Banco de Dados</title>
 </head>
 <body>
 
@@ -34,26 +34,31 @@
     <!-- CONTEÚDO PRINCIPAL -->
     <section class="container">
 
-        <h1>HTML</h1>
+        <h1>Banco de Dados</h1>
 
         <details class="item">
             <summary>
                 <img src="../images/seta-direita.png" class="arrow">
-                Estrutura básica
+                O que é um banco de dados
             </summary>
             <div class="content">
-                <p>Toda página HTML possui uma estrutura padrão com tags essenciais.</p>
+                <p>Um banco de dados organiza e armazena informações de forma estruturada, permitindo consultas e atualizações com segurança.</p>
+            </div>
+        </details>
+
+        <details class="item">
+            <summary>
+                <img src="../images/seta-direita.png" class="arrow">
+                Tabelas e registros
+            </summary>
+            <div class="content">
+                <p>Os dados ficam organizados em tabelas, formadas por linhas (registros) e colunas (campos).</p>
                 <pre>
-&lt;!DOCTYPE html&gt;
-&lt;html lang="pt-br"&gt;
-    &lt;head&gt;
-        &lt;meta charset="UTF-8"&gt;
-        &lt;title&gt;Minha Página&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;h1&gt;Olá, mundo!&lt;/h1&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
+Tabela: alunos
+| id | nome   | idade |
+|----|--------|-------|
+| 1  | Maria  | 20    |
+| 2  | João   | 22    |
                 </pre>
             </div>
         </details>
@@ -61,15 +66,19 @@
         <details class="item">
             <summary>
                 <img src="../images/seta-direita.png" class="arrow">
-                Tags principais
+                Comandos SQL básicos
             </summary>
             <div class="content">
-                <p>Tags mais utilizadas para organizar o conteúdo.</p>
+                <p>SQL é a linguagem usada para manipular dados.</p>
                 <pre>
-&lt;h1&gt;Título principal&lt;/h1&gt;
-&lt;p&gt;Parágrafo de texto.&lt;/p&gt;
-&lt;div&gt;Bloco de conteúdo&lt;/div&gt;
-&lt;span&gt;Texto inline&lt;/span&gt;
+SELECT * FROM alunos;
+
+INSERT INTO alunos (nome, idade)
+VALUES ('Ana', 19);
+
+UPDATE alunos SET idade = 21 WHERE id = 1;
+
+DELETE FROM alunos WHERE id = 2;
                 </pre>
             </div>
         </details>
@@ -77,35 +86,16 @@
         <details class="item">
             <summary>
                 <img src="../images/seta-direita.png" class="arrow">
-                Links e imagens
+                Chaves primárias e estrangeiras
             </summary>
             <div class="content">
-                <p>Como criar links e inserir imagens na página.</p>
+                <p>A chave primária identifica cada registro. A chave estrangeira conecta tabelas relacionadas.</p>
                 <pre>
-&lt;a href="https://exemplo.com"&gt;Visitar site&lt;/a&gt;
+Tabela: cursos (id, nome)
+Tabela: matriculas (id, aluno_id, curso_id)
 
-&lt;img src="imagem.png" alt="Descrição da imagem"&gt;
-                </pre>
-            </div>
-        </details>
-
-        <details class="item">
-            <summary>
-                <img src="../images/seta-direita.png" class="arrow">
-                Listas
-            </summary>
-            <div class="content">
-                <p>Listas ordenadas e não ordenadas.</p>
-                <pre>
-&lt;ul&gt;
-    &lt;li&gt;Item 1&lt;/li&gt;
-    &lt;li&gt;Item 2&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-    &lt;li&gt;Primeiro&lt;/li&gt;
-    &lt;li&gt;Segundo&lt;/li&gt;
-&lt;/ol&gt;
+aluno_id referencia alunos(id)
+curso_id referencia cursos(id)
                 </pre>
             </div>
         </details>

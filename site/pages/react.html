@@ -7,7 +7,7 @@
     <!-- Ligação com o CSS -->
     <link rel="stylesheet" href="../css/linguagem_c.css">
 
-    <title>HTML</title>
+    <title>React</title>
 </head>
 <body>
 
@@ -34,26 +34,19 @@
     <!-- CONTEÚDO PRINCIPAL -->
     <section class="container">
 
-        <h1>HTML</h1>
+        <h1>React</h1>
 
         <details class="item">
             <summary>
                 <img src="../images/seta-direita.png" class="arrow">
-                Estrutura básica
+                Componentes
             </summary>
             <div class="content">
-                <p>Toda página HTML possui uma estrutura padrão com tags essenciais.</p>
+                <p>Componentes são blocos reutilizáveis da interface.</p>
                 <pre>
-&lt;!DOCTYPE html&gt;
-&lt;html lang="pt-br"&gt;
-    &lt;head&gt;
-        &lt;meta charset="UTF-8"&gt;
-        &lt;title&gt;Minha Página&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;h1&gt;Olá, mundo!&lt;/h1&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
+function Saudacao() {
+    return &lt;h1&gt;Olá, mundo!&lt;/h1&gt;;
+}
                 </pre>
             </div>
         </details>
@@ -61,15 +54,17 @@
         <details class="item">
             <summary>
                 <img src="../images/seta-direita.png" class="arrow">
-                Tags principais
+                JSX
             </summary>
             <div class="content">
-                <p>Tags mais utilizadas para organizar o conteúdo.</p>
+                <p>JSX permite escrever HTML dentro do JavaScript.</p>
                 <pre>
-&lt;h1&gt;Título principal&lt;/h1&gt;
-&lt;p&gt;Parágrafo de texto.&lt;/p&gt;
-&lt;div&gt;Bloco de conteúdo&lt;/div&gt;
-&lt;span&gt;Texto inline&lt;/span&gt;
+const elemento = (
+    &lt;div&gt;
+        &lt;h2&gt;Título&lt;/h2&gt;
+        &lt;p&gt;Parágrafo de exemplo&lt;/p&gt;
+    &lt;/div&gt;
+);
                 </pre>
             </div>
         </details>
@@ -77,14 +72,16 @@
         <details class="item">
             <summary>
                 <img src="../images/seta-direita.png" class="arrow">
-                Links e imagens
+                Props
             </summary>
             <div class="content">
-                <p>Como criar links e inserir imagens na página.</p>
+                <p>Props passam dados de um componente pai para o filho.</p>
                 <pre>
-&lt;a href="https://exemplo.com"&gt;Visitar site&lt;/a&gt;
+function BoasVindas(props) {
+    return &lt;h1&gt;Olá, {props.nome}!&lt;/h1&gt;;
+}
 
-&lt;img src="imagem.png" alt="Descrição da imagem"&gt;
+&lt;BoasVindas nome="Ana" /&gt;
                 </pre>
             </div>
         </details>
@@ -92,20 +89,22 @@
         <details class="item">
             <summary>
                 <img src="../images/seta-direita.png" class="arrow">
-                Listas
+                useState
             </summary>
             <div class="content">
-                <p>Listas ordenadas e não ordenadas.</p>
+                <p>Hook para controlar estado em componentes funcionais.</p>
                 <pre>
-&lt;ul&gt;
-    &lt;li&gt;Item 1&lt;/li&gt;
-    &lt;li&gt;Item 2&lt;/li&gt;
-&lt;/ul&gt;
+import { useState } from 'react';
 
-&lt;ol&gt;
-    &lt;li&gt;Primeiro&lt;/li&gt;
-    &lt;li&gt;Segundo&lt;/li&gt;
-&lt;/ol&gt;
+function Contador() {
+    const [valor, setValor] = useState(0);
+
+    return (
+        &lt;button onClick={() =&gt; setValor(valor + 1)}&gt;
+            Clicou {valor} vezes
+        &lt;/button&gt;
+    );
+}
                 </pre>
             </div>
         </details>

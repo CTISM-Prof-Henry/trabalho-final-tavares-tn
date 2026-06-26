@@ -7,7 +7,7 @@
     <!-- Ligação com o CSS -->
     <link rel="stylesheet" href="../css/linguagem_c.css">
 
-    <title>HTML</title>
+    <title>JavaScript</title>
 </head>
 <body>
 
@@ -34,26 +34,19 @@
     <!-- CONTEÚDO PRINCIPAL -->
     <section class="container">
 
-        <h1>HTML</h1>
+        <h1>JavaScript</h1>
 
         <details class="item">
             <summary>
                 <img src="../images/seta-direita.png" class="arrow">
-                Estrutura básica
+                Variáveis
             </summary>
             <div class="content">
-                <p>Toda página HTML possui uma estrutura padrão com tags essenciais.</p>
+                <p>Declaração de variáveis com let, const e var.</p>
                 <pre>
-&lt;!DOCTYPE html&gt;
-&lt;html lang="pt-br"&gt;
-    &lt;head&gt;
-        &lt;meta charset="UTF-8"&gt;
-        &lt;title&gt;Minha Página&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;h1&gt;Olá, mundo!&lt;/h1&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
+let idade = 25;
+const nome = "João";
+var ativo = true;
                 </pre>
             </div>
         </details>
@@ -61,15 +54,16 @@
         <details class="item">
             <summary>
                 <img src="../images/seta-direita.png" class="arrow">
-                Tags principais
+                Condicionais
             </summary>
             <div class="content">
-                <p>Tags mais utilizadas para organizar o conteúdo.</p>
+                <p>Estruturas de decisão com if e else.</p>
                 <pre>
-&lt;h1&gt;Título principal&lt;/h1&gt;
-&lt;p&gt;Parágrafo de texto.&lt;/p&gt;
-&lt;div&gt;Bloco de conteúdo&lt;/div&gt;
-&lt;span&gt;Texto inline&lt;/span&gt;
+if (idade >= 18) {
+    console.log("Maior de idade");
+} else {
+    console.log("Menor de idade");
+}
                 </pre>
             </div>
         </details>
@@ -77,14 +71,14 @@
         <details class="item">
             <summary>
                 <img src="../images/seta-direita.png" class="arrow">
-                Links e imagens
+                Laços de Repetição
             </summary>
             <div class="content">
-                <p>Como criar links e inserir imagens na página.</p>
+                <p>Repetição com for e while.</p>
                 <pre>
-&lt;a href="https://exemplo.com"&gt;Visitar site&lt;/a&gt;
-
-&lt;img src="imagem.png" alt="Descrição da imagem"&gt;
+for (let i = 0; i &lt; 5; i++) {
+    console.log(i);
+}
                 </pre>
             </div>
         </details>
@@ -92,20 +86,16 @@
         <details class="item">
             <summary>
                 <img src="../images/seta-direita.png" class="arrow">
-                Listas
+                Funções
             </summary>
             <div class="content">
-                <p>Listas ordenadas e não ordenadas.</p>
+                <p>Funções podem ser declaradas de formas diferentes.</p>
                 <pre>
-&lt;ul&gt;
-    &lt;li&gt;Item 1&lt;/li&gt;
-    &lt;li&gt;Item 2&lt;/li&gt;
-&lt;/ul&gt;
+function soma(a, b) {
+    return a + b;
+}
 
-&lt;ol&gt;
-    &lt;li&gt;Primeiro&lt;/li&gt;
-    &lt;li&gt;Segundo&lt;/li&gt;
-&lt;/ol&gt;
+const multiplica = (a, b) => a * b;
                 </pre>
             </div>
         </details>
