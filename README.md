@@ -59,31 +59,31 @@ Marque com `[x]` os elementos que **foram implementados no seu site**. Você nã
 
 #### Estrutura semântica
 
-- [ ] `<header>`
-- [ ] `<nav>`
-- [ ] `<main>`
-- [ ] `<section>`
+- [X] `<header>`
+- [X] `<nav>`
+- [X] `<main>`
+- [X] `<section>`
 - [ ] `<article>`
 - [ ] `<aside>`
 - [ ] `<footer>`
 
 #### Conteúdo
 
-- [ ] Títulos (`h1`, `h2`, `h3`, etc.)
-- [ ] Parágrafos (`p`)
-- [ ] Imagens (`img`)
-- [ ] Links (`a`)
+- [X] Títulos (`h1`, `h2`, `h3`, etc.)
+- [X] Parágrafos (`p`)
+- [X] Imagens (`img`)
+- [X] Links (`a`)
 - [ ] Listas:
   - [ ] `ul`
   - [ ] `ol`
 
 #### Formulários
 
-- [ ] `<form>`
-- [ ] `<input>`
-- [ ] `<label>`
+- [X] `<form>`
+- [X] `<input>`
+- [X] `<label>`
 - [ ] `<textarea>`
-- [ ] `<button>`
+- [X] `<button>`
 
 ### 🎨 CSS
 
@@ -93,7 +93,7 @@ Marque com `[x]` os elementos que **foram implementados no seu site**. Você nã
   - [X] pseudoclasse (`#a::hover`)
 - [ ] Cores
 - [X] Tipografia (e.g. `font-family`)
-- [ ] Margem e padding
+- [X] Margem e padding
 - [ ] Layout com `flexbox`
 - [ ] Layout com `grid`
 - [X] Responsividade (`media queries`)
